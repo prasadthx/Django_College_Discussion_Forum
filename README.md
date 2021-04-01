@@ -39,7 +39,7 @@ USAGE :-
    regarding the information of students.
 
 2. If any student data is missing, new student data can be added at:-
-   www.juitpython.anywhere/register/new_user
+   /register/new_user
    (Post method . Required data: Roll No and Email Id)
 
 3. Students have to register/login on the discussion forum platform using their Roll No
@@ -54,26 +54,26 @@ USAGE :-
    his/her password, he/she may reset it with the forget password link.
 
 6. For logging in for first time(i.e. registration) use (GET request):-
-   www.juitpython.anywhere/register/first_password_change/(student's roll_no)
+   /register/first_password_change/(student's roll_no)
 
    For any other logging attempt (POST request (roll no and password) ):-
-   www.juitpython.anywhere/register/login
+   /register/login
 
 7. The platform is smart enough to know whether any student is logging in for the first time or
    not. So, chances of spoofing into another student's account are highly reduced as long as any
    student keeps his email regarding the password change secure.
 
 8. If any student forgets his/her password, the password can be reset by them through (GET):-
-   www.juitpython.anywhere/register/forgot_password/(student's roll_no)
+   /register/forgot_password/(student's roll_no)
    Link to reset password will be sent to the student's email address.
    Following the link to set up the new password:-
-   www.juitpython.anywhere/register/forgot_password/(student's roll_no)
+   /register/forgot_password/(student's roll_no)
 
 9. On entering the platform, a student can choose among the discussion forums(classes/subjects)
    made available by the college or create one by himself(It is highly discouraged to do so.)
 
    For viewing the available classes or create a new one:-
-   www.juitpython.anywhere/register/classses
+   /register/classes
    (Get request => Get list of classes, POST request => Create new class)
 
 10.For editing, deleting or viewing a discussion forum(class/subject), the logged in student should
@@ -83,35 +83,35 @@ www.juitpython.anywhere/register/class/(class id)
 with PUT, DELETE, GET for respective uses.
 
 11.For viewing the classes a student has enrolled in or wants to enroll in:-
-www.juitpython.anywhere/register/userclasses
+/register/userclasses
 (GET request to view the enrolled classes, POST to join a class)
 
 12.For unenrolling from a class:-
-www.juitpython.anywhere/register/classdata/(class id)
+/register/classdata/(class id)
 (DELETE request)
 
 13.To get the student data:
-www.juitpython.anywhere/register/student_info/(student_roll_no)
+/register/student_info/(student_roll_no)
 (GET request)
 
 @ QUESTION-ANSWER PART
 
 14.To get all the questions related to a class:-
-www.juitpython.anywhere/question/question/(class id)
+/question/question/(class id)
 (GET request ==> Get all questions, POST request ==> Add a new question)
 
 15.For editing, deleting or viewing a question, the logged in student should be the student
 who has asked the question.
-www.juitpython.anywhere/question/question/(class id)/(question id)
+/question/question/(class id)/(question id)
 (GET, PUT, DELETE for viewing, modifying and deleting the question respectively.)
 
 16.To view answers answered to a particular question:-
-www.juitpython.anywhere/question/answer/(class id)/(question id)
+/question/answer/(class id)/(question id)
 (GET request ==> Get all answers, POST request ==> Add a new answer)
 
 17.For editing, deleting or viewing an answer, the logged in student should be the student
 who has answered.
-www.juitpython.anywhere/question/question/(class id)/(question id)/(answer id)
+/question/question/(class id)/(question id)/(answer id)
 (GET, PUT, DELETE for viewing, modifying and deleting the answer respectively.)
 
 
