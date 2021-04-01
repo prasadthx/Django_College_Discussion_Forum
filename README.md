@@ -79,7 +79,7 @@ USAGE :-
 10.For editing, deleting or viewing a discussion forum(class/subject), the logged in student should
 be the creator of the class.
 For editing, deleting or updating a discussion forum:-
-www.juitpython.anywhere/register/class/(class id)
+/register/class/(class id)
 with PUT, DELETE, GET for respective uses.
 
 11.For viewing the classes a student has enrolled in or wants to enroll in:-
